@@ -101,9 +101,10 @@ nav ul li a:hover {
 
 /*导航栏二级菜单 */
 nav ul li ul {
-    /* display: none; */
+    display: none;
     background: #006db8;
     position: absolute;
+    margin: auto;
     z-index: 1;
 }
 
@@ -111,7 +112,7 @@ nav ul li ul {
 nav ul li ul li {
     /* width: 130px; */
     border-bottom: 1px dotted #0b93dd;
-    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/nav_bg_img.jpg) 75 center no-repeat;
+    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/nav_bg_img.jpg) 95% center no-repeat;
     font-size: 12px;
 }
 

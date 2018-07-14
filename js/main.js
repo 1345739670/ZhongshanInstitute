@@ -6,7 +6,13 @@ $(document).ready(function(){
     });
 
     tabs($(".centerSlider .focusNavigation li"), $('.centerSlider .focusNewsList .con'));  
-    tabs($(".rightColumn .focusNavigation li"), $('.rightColumn .AnnouncementAcademicList .con'));  
+    tabs($(".rightColumn .focusNavigation li"), $('.rightColumn .AnnouncementAcademicList .con'));
+
+    $(".js-hover").hover(function(){
+        $(this).children("ul").show();
+    },function() {
+        $(this).children("ul").hide();
+    });
 });
 var tabs = function(tab, con) {
     con.each(function () {
