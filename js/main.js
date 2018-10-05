@@ -1,17 +1,21 @@
 $(document).ready(function(){
-    $('.slickWrapper').slick({
-        autoplay: true,
-        // appendArrows: $('.slickWrapper'),
-        // appendDots: $('.slickWrapper')
+    // 中央轮播图
+    $(".slideBox").slide({
+        mainCell:".slideItems ul",
+        titCell: ".dots ul",
+        autoPlay: true,
+        autoPage: true
     });
 
+    // 中间媒体聚焦和焦点资讯的标签切换效果
     tabs($(".centerSlider .focusNavigation li"), $('.centerSlider .focusNewsList .con'));  
     tabs($(".rightColumn .focusNavigation li"), $('.rightColumn .AnnouncementAcademicList .con'));
 
+    // 下拉菜单
     $(".js-hover").hover(function(){
-        $(this).children("ul").show();
+        $(this).children("ul").slideDown();
     },function() {
-        $(this).children("ul").hide();
+        $(this).children("ul").slideUp();
     });
 });
 var tabs = function(tab, con) {

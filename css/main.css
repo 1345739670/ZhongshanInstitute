@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-    color:#FF0000;
+    color: #FF0000;
 }
 
 a[class~="ellipsisText"]:hover {
@@ -53,7 +53,7 @@ header {
     margin-left: 20px;
 }
 
-.wrapper .search{
+.wrapper .search {
     float: right;
     margin-right: 10px;
     margin-top: 35px;
@@ -100,6 +100,7 @@ nav ul li a:hover {
 }
 
 /*导航栏二级菜单 */
+
 nav ul li ul {
     display: none;
     background: #006db8;
@@ -108,7 +109,8 @@ nav ul li ul {
     z-index: 1;
 }
 
-/*导航栏二级菜单的选项 */
+/*导航栏二级菜单的选项 start */
+
 nav ul li ul li {
     width: 130px;
     border-bottom: 1px dotted #0b93dd;
@@ -118,11 +120,84 @@ nav ul li ul li {
     text-indent: 5%;
 }
 
-.slickWrapper {
+/*导航栏二级菜单的选项 end */
+
+/*轮播图 start */
+
+.slideBox {
     width: 1000px;
     height: 245px;
     overflow: hidden;
     margin: 0 auto;
+    position:relative;
+}
+
+.slideBox .dots {
+    height: 18px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+
+.slideBox .dots ul {
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+}
+
+.slideBox .dots ul li {
+    float: left;
+    margin-right: 2px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #666;
+    border: #ccc 1px solid;
+    background: #eaeaea;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.slideBox .dots ul li.on {
+    border: #000 1px solid;
+    background: #333;
+    color: #fff;
+}
+
+.slideBox .prev, .slideBox .next {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    width: 32px;
+    height: 40px;
+    background: url(../Img/slider-arrow.png) -110px 5px no-repeat;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.slideBox .next {
+    left: auto;
+    right: 3%;
+    background-position: 8px 5px;
+}
+
+.slideBox .prev:hover, .slideBox .next:hover {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.slideBox .prevStop {
+    display: none;
+}
+
+.slideBox .nextStop {
+    display: none;
 }
 
 .indexMain {
@@ -138,23 +213,20 @@ nav ul li ul li {
     position: absolute;
     left: 0;
     top: 0;
-    /* top: 14px;
-    left: 15px; */
-    /* background: rgb(255, 238, 0); */
-    /* 为什么！我不明白！ */
-    overflow: hidden;
-    /* 为什么！我不明白！ */
 }
 
 .leftColumn .digitalCampus {
     background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/indexGuideA_bg.png) no-repeat;
 }
+
 .leftColumn .campusService {
     background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/indexGuideB_bg.png) no-repeat;
 }
+
 .leftColumn .campusTopic {
     background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/indexGuideC_bg.png) no-repeat;
 }
+
 .leftColumn .campusMedia {
     background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/indexGuideD_bg.png) no-repeat;
 }
@@ -173,7 +245,7 @@ nav ul li ul li {
     right: 10px;
 }
 
-.leftColumn ul li{
+.leftColumn ul li {
     float: left;
     width: 50%;
     height: 25px;
@@ -197,30 +269,30 @@ nav ul li ul li {
     left: 90px;
 }
 
-.campusTopic ul li{
+.campusTopic ul li {
     float: none;
     width: 100%;
     text-align: left;
     text-indent: 12px;
 }
 
-.campusTopic ul li span{
+.campusTopic ul li span {
     color: #e53333
 }
 
-.campusMedia .WeChatPic{
+.campusMedia .WeChatPic {
     position: absolute;
     left: 100px;
     top: 25px;
 }
 
-.campusMedia .schoolNewspaper{
+.campusMedia .schoolNewspaper {
     position: absolute;
     left: 175px;
     top: 25px;
 }
 
-.campusMedia .video{
+.campusMedia .video {
     position: absolute;
     left: 175px;
     bottom: 20px;
@@ -255,7 +327,7 @@ nav ul li ul li {
     margin-top: 5px;
 }
 
-.newsList li, .focusNewsList li,.announcementList li {
+.newsList li, .focusNewsList li, .announcementList li {
     font-size: 12px;
     padding-left: 14px;
     background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/icon_01.jpg) center left no-repeat;
@@ -282,6 +354,7 @@ nav ul li ul li {
     border-bottom: 1px solid #e4e4e4;
     font-size: 12px;
 }
+
 .academicList a {
     width: 175px;
 }
@@ -328,7 +401,7 @@ nav ul li ul li {
     border-bottom: 2px solid #00A2E9;
 }
 
-.focusNavigation li{
+.focusNavigation li {
     float: left;
     height: 23px;
     line-height: 23px;
@@ -340,11 +413,11 @@ nav ul li ul li {
     background: #fff;
 }
 
-.focusNavigation .current a{
+.focusNavigation .current a {
     color: #c25457;
 }
 
-.focusNavigation ul li a{
+.focusNavigation ul li a {
     color: #4c4646;
 }
 
@@ -385,7 +458,7 @@ nav ul li ul li {
     background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/footerLink_bg.png) no-repeat
 }
 
-.footerLink li{
+.footerLink li {
     float: left;
     width: 173px;
     height: 35px;
@@ -404,7 +477,7 @@ nav ul li ul li {
 
 .footerLink li[class="otherFooterLink"] {
     border-left: 1px solid #DBDBDB;
-} 
+}
 
 .ImgFooterLink {
     float: left;
@@ -467,5 +540,3 @@ footer {
     right: 0px;
     text-align: right;
 }
-
-
