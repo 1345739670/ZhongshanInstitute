@@ -110,10 +110,12 @@ nav ul li ul {
 
 /*导航栏二级菜单的选项 */
 nav ul li ul li {
-    /* width: 130px; */
+    width: 130px;
     border-bottom: 1px dotted #0b93dd;
     background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/nav_bg_img.jpg) 95% center no-repeat;
-    font-size: 12px;
+    font-size: 10px;
+    text-align: left;
+    text-indent: 5%;
 }
 
 .slickWrapper {
