@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", SimSun, Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #00070c url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/bg_01.jpg) center 130px no-repeat;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color:#FF0000;
+}
+
+a[class~="ellipsisText"]:hover {
+    color: #183885;
+}
+
+header {
+    width: 100%;
+    height: 130px;
+    background: #0154a4 url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/header_bg.png) top center no-repeat;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    /* margin-top: -60px; */
+    margin-top: -130px;
+}
+
+.wrapper .headerWrapper {
+    height: 98px;
+    position: relative;
+}
+
+.wrapper .logo {
+    float: left;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+.wrapper .search{
+    float: right;
+    margin-right: 10px;
+    margin-top: 35px;
+    z-index: auto;
+}
+
+.wrapper .search .searchContent {
+    width: 160px;
+    height: 25px;
+    line-height: 25px;
+    border: 0;
+    background: #d6dcec;
+    padding-left: 5px;
+}
+
+.wrapper .search input {
+    float: left;
+}
+
+nav {
+    width: 1000px;
+    height: 32px;
+    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/nav_bg.png) no-repeat;
+    border-bottom: 1px solid #4ca4d6;
+}
+
+nav ul li {
+    float: left;
+    width: 82px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #FF9;
+}
+
+/*导航栏二级菜单 */
+nav ul li ul {
+    display: none;
+    background: #006db8;
+    position: absolute;
+    margin: auto;
+    z-index: 1;
+}
+
+/*导航栏二级菜单的选项 */
+nav ul li ul li {
+    /* width: 130px; */
+    border-bottom: 1px dotted #0b93dd;
+    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/nav_bg_img.jpg) 95% center no-repeat;
+    font-size: 12px;
+}
+
+.slickWrapper {
+    width: 1000px;
+    height: 245px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.indexMain {
+    height: 440px;
+    background: #fff;
+    font-size: 14px;
+    position: relative;
+}
+
+.leftColumn {
+    width: 270px;
+    height: 390px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* top: 14px;
+    left: 15px; */
+    /* background: rgb(255, 238, 0); */
+    /* 为什么！我不明白！ */
+    overflow: hidden;
+    /* 为什么！我不明白！ */
+}
+
+.leftColumn .digitalCampus {
+    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/indexGuideA_bg.png) no-repeat;
+}
+.leftColumn .campusService {
+    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/indexGuideB_bg.png) no-repeat;
+}
+.leftColumn .campusTopic {
+    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/indexGuideC_bg.png) no-repeat;
+}
+.leftColumn .campusMedia {
+    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/indexGuideD_bg.png) no-repeat;
+}
+
+.digitalCampus, .campusService, .campusTopic, .campusMedia {
+    width: 249px;
+    height: 83px;
+    margin-top: 10px;
+    margin-left: 11px;
+    position: relative;
+}
+
+.leftColumn ul {
+    position: absolute;
+    width: 150px;
+    right: 10px;
+}
+
+.leftColumn ul li{
+    float: left;
+    width: 50%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/home_left_list.png) 0 7px no-repeat;
+    text-indent: 4px;
+}
+
+.digitalCampus ul {
+    top: 5px;
+}
+
+.campusService ul {
+    top: 18px;
+}
+
+.campusTopic ul {
+    width: 130px;
+    left: 90px;
+}
+
+.campusTopic ul li{
+    float: none;
+    width: 100%;
+    text-align: left;
+    text-indent: 12px;
+}
+
+.campusTopic ul li span{
+    color: #e53333
+}
+
+.campusMedia .WeChatPic{
+    position: absolute;
+    left: 100px;
+    top: 25px;
+}
+
+.campusMedia .schoolNewspaper{
+    position: absolute;
+    left: 175px;
+    top: 25px;
+}
+
+.campusMedia .video{
+    position: absolute;
+    left: 175px;
+    bottom: 20px;
+}
+
+.middleColumn {
+    height: 390px;
+    width: 430px;
+    margin: 0 300px 0 270px;
+    overflow: hidden;
+    /* background: rgb(38, 138, 231); */
+}
+
+.middleColumn .centerNew {
+    width: 420px;
+    color: #044f9f;
+    padding-left: 10PX;
+    padding-bottom: 3px;
+    margin-top: 11px;
+    position: relative;
+}
+
+.centerNew .enterNewsNetwork {
+    position: absolute;
+    color: #a24848;
+    right: 5px;
+    top: 0;
+    font-size: 12px;
+}
+
+.focusNewsList .con {
+    margin-top: 5px;
+}
+
+.newsList li, .focusNewsList li,.announcementList li {
+    font-size: 12px;
+    padding-left: 14px;
+    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/icon_01.jpg) center left no-repeat;
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.newsList a {
+    width: 345px;
+}
+
+.focusNewsList a {
+    width: 380px;
+}
+
+.announcementList a {
+    width: 200px;
+}
+
+.academicList li {
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 12px;
+}
+.academicList a {
+    width: 175px;
+}
+
+.ellipsisText {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.new {
+    width: 27px;
+    height: 8px;
+    float: right;
+}
+
+.newsList .date {
+    width: 35px;
+    float: right;
+    text-align: right;
+    color: #a1a1a1;
+}
+
+.academicList .date {
+    width: 45px;
+    float: left;
+    color: #a1a1a1;
+}
+
+.focusNavigation {
+    margin-top: 6px;
+    height: 23px;
+    line-height: 23px;
+}
+
+.mouseoverTab {
+    width: 100%;
+    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/announ_bg.jpg) no-repeat;
+}
+
+.listTitle {
+    font-weight: bold;
+    border-bottom: 2px solid #00A2E9;
+}
+
+.focusNavigation li{
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    width: 100px;
+    text-align: center;
+}
+
+.focusNavigation .current {
+    background: #fff;
+}
+
+.focusNavigation .current a{
+    color: #c25457;
+}
+
+.focusNavigation ul li a{
+    color: #4c4646;
+}
+
+.more {
+    color: #999;
+    float: right;
+    font-size: 12px;
+}
+
+.slideTxtBox {
+    margin-top: 10px;
+}
+
+.rightColumn {
+    width: 260px;
+    height: 390px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    /* background: rgb(238, 144, 28) */
+}
+
+.rightColumn .con {
+    margin-top: 5px;
+}
+
+.footerNav {
+    height: 35px;
+    margin-left: 11px;
+    margin-right: 11px;
+    /* background: rgb(238, 144, 28) */
+}
+
+.footerLink {
+    float: left;
+    width: 696px;
+    height: 35px;
+    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/footerLink_bg.png) no-repeat
+}
+
+.footerLink li{
+    float: left;
+    width: 173px;
+    height: 35px;
+    font-size: 12px;
+    color: #777576;
+}
+
+.footerLink li a {
+    float: left;
+    width: 173px;
+    line-height: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: #666;
+}
+
+.footerLink li[class="otherFooterLink"] {
+    border-left: 1px solid #DBDBDB;
+} 
+
+.ImgFooterLink {
+    float: left;
+    width: 260px;
+    height: 35px;
+    margin-left: 20px;
+    line-height: 35px;
+    background: #eee;
+}
+
+.ImgFooterLink li {
+    float: left;
+    font-size: 12px;
+    background: url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/E_mails.png) 20px 10px no-repeat;
+}
+
+.ImgFooterLink li a {
+    color: #1B264F;
+    margin-left: 50px;
+}
+
+footer {
+    height: 75px;
+    background: #0154a4 url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/foot_left_bg.jpg) left no-repeat
+}
+
+/* .footerBG {
+    background: #0154a4 url(http://www.zsc.edu.cn/import/sites/105000-110000/108044/zsc/images/foot_right_bg.jpg) right no-repeat
+} */
+
+.middleFooter {
+    width: 960px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 20px;
+    color: #eaeaea;
+    position: relative;
+}
+
+.middleFooter a {
+    color: #eaeaea;
+}
+
+.middleFooter .siteFooterLogo {
+    position: absolute;
+    top: 5px;
+}
+
+.footLeft {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+}
+
+.footRight {
+    position: absolute;
+    width: 613px;
+    top: 10px;
+    right: 0px;
+    text-align: right;
+}
+
+
